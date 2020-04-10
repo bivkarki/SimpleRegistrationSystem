@@ -118,7 +118,7 @@ echo '</div>';
 <
 </form>
 //HTML Components
-    <div id="top-nav-box">
+    < <div id="top-nav-box">
     <a href="home.html" ><button   id="button1">Home</button></a>
      <a href="login.html" style="float: right;margin-right: 20px;"><button   id="button1">Login</button></a>
    </div>
@@ -129,6 +129,7 @@ echo '</div>';
 <br>
     <div class="signupbox">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <img id="userimg" src="user.png" alt="user" />
     <center><h2 style="color:orange;">Signup Form</h2></center>
     <br>
     <table id="signup">
