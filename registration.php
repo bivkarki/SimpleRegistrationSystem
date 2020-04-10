@@ -93,8 +93,8 @@ $query="Insert into users (name,email,username,password,address,reset_code,is_ac
 if ($conn->query($query))
 {
 echo "New Record Created SuccessFully!";
-$msg="Your account has been created successfully. Click <a href='https://mail.google.com' target='external' >Here	</a>";
-$message="You have been registered syccessfully.Click the link below to verify your account:<br><br><a href='account_verify.php?code=$reset_code'>Click to Verify</a>";
+//$msg="Your account has been created successfully. Click <a href='https://mail.google.com' target='external' >Here	</a>";
+//$message="You have been registered syccessfully.Click the link below to verify your account:<br><br><a href='account_verify.php?code=$reset_code'>Click to Verify</a>";
 
 //sending email to user
 //send_mail($email,$message);
@@ -120,7 +120,7 @@ echo '</div>';
 //HTML Components
     < <div id="top-nav-box">
     <a href="home.html" ><button   id="button1">Home</button></a>
-     <a href="login.html" style="float: right;margin-right: 20px;"><button   id="button1">Login</button></a>
+     <a href="login.php" style="float: right;margin-right: 20px;"><button   id="button1">Login</button></a>
    </div>
     <div id="container">
   <p><Marquee behavior="alternate"><span id="s1"style="color: white;font-weight: 800;font-size: 35px;margin-bottom: 10px;"> Welcome!! We are very delighted for having you here!
@@ -135,24 +135,24 @@ echo '</div>';
     <table id="signup">
     <tr>
     <td><label>Name:</label></td>
-    <td><input type="text"  id="t1" name="name" placeholder="Enter your full name"><span class="error-txt"><?php echo $nameErr; ?></span>
+    <td><input type="text"  id="t1" name="name" placeholder="Enter your full name"><div><span class="error-txt"><?php echo $nameErr; ?></span></div>
     </td>
     </tr>
     <tr>
     <td><label>Email:</label>
-    <td><input  type="email" id="t2" name="email" placeholder="Enter your email address"><span class="error-txt"><?php echo $emailErr; ?></span></td>
+    <td><input  type="email" id="t2" name="email" placeholder="Enter your email address"><div><span class="error-txt"><?php echo $emailErr; ?></span></div></td>
     </tr>
     <tr>
     <td><label>Username:</label></td>
-    <td><input type="text"  id="t1" name="username" placeholder="Enter an username "><span class="error-txt"><?php echo $usernameErr; ?></span></td>
+    <td><input type="text"  id="t1" name="username" placeholder="Enter an username "><div><span class="error-txt"><?php echo $usernameErr; ?></span></div></td>
     </tr>
     <tr>
     <td><label>Enter Password:</label></td>
-    <td><input  type="password"  id="p1" name="password" placeholder="Enter a password" ><span class="error-txt"><?php echo $passwordErr; ?></span></td>
+    <td><input  type="password"  id="p1" name="password" placeholder="Enter a password" ><div><span class="error-txt"><?php echo $passwordErr; ?></span></div></td>
     </tr>
     <tr>
     <td><label>Confirm Password:</label></td>
-    <td><input type="password"  id="p2" name="confirm_password" placeholder="Retype your password here"><span class="error-txt"><?php echo $confirm_passwordErr; ?></span></td>
+    <td><input type="password"  id="p2" name="confirm_password" placeholder="Retype your password here"><div><span class="error-txt"><?php echo $confirm_passwordErr; ?></span></div></td>
     </tr>
     <tr>
     <td> <label>Address(Optional):</label></td>
@@ -164,7 +164,7 @@ echo '</div>';
     </tr>
     <tr>
     <td> <label>Enter CAPTCHA:</label> </td>
-    <td> <input type="text" name="captcha" id="cap" onfocus="res()" /></td>
+    <td> <input type="text" name="captcha" id="cap" onkeyup="res()" /></td>
     </tr> 
     <tr>
     <td> <label></label> </td>

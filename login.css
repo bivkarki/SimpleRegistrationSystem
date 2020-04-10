@@ -54,7 +54,7 @@ h2
 	text-align:center;
 	color:#3366cc; yellow;
 	font-family: arial;
-	font-size:28px;
+	font-size:40px;
 }
 input
 {
@@ -109,8 +109,9 @@ a:hover
 h1
 {
 	font-family: Rosewood Std;
-	font-size: 55px;
-	letter-spacing: 4px;
+	font-size: 30px;
+	letter-spacing: 1px;
+color:#ED553b;#173F5f;
 
 
 }
