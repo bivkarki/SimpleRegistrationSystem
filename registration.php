@@ -1,5 +1,11 @@
 <html>
-<body>
+<head>
+    <title>SignUp Here</title>
+    <script src="signup.js"></script>
+    <link rel="stylesheet" href="signup.css">
+   <link rel="icon" type="image/png" sizes="32*32" href="user.png">
+</head>
+<body onload="generate()">
 <?php
 require_once("config.php");
 require_once("functions.php");
@@ -109,15 +115,73 @@ echo '</div>';
 }
 ?>
 <div>
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" >
-    <div> Name:<input type="text" name="name"><span class="error-txt"><?php echo $nameErr; ?></span></div>
-    <div> Email<input type="text" name="email"><span class="error-txt"><?php echo $emailErr; ?></span></div>
-    <div> Username<input type="text" name="username"><span class="error-txt"><?php echo $usernameErr; ?></span></div>
-    <div> Address:<input type="text" name="address"><span class="error-txt">(optional)</span></div>
-    <div> Password:<input type="password" name="password"><span class="error-txt"><?php echo $passwordErr; ?></span></div>
-    <div> Confirm Password: <input type="password" name="confirm_password"><span class="error-txt"><?php echo $confirm_passwordErr; ?></span></div>
-    <br>
-    <button type="submit">Sign Up</button>
+<
 </form>
+//HTML Components
+    <div id="top-nav-box">
+    <a href="home.html" ><button   id="button1">Home</button></a>
+     <a href="login.html" style="float: right;margin-right: 20px;"><button   id="button1">Login</button></a>
+   </div>
+    <div id="container">
+  <p><Marquee behavior="alternate"><span id="s1"style="color: white;font-weight: 800;font-size: 35px;margin-bottom: 10px;"> Welcome!! We are very delighted for having you here!
+ </span></MArquee></p>
+  <br>
+<br>
+    <div class="signupbox">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <center><h2 style="color:orange;">Signup Form</h2></center>
+    <br>
+    <table id="signup">
+    <tr>
+    <td><label>Name:</label></td>
+    <td><input type="text"  id="t1" name="name" placeholder="Enter your full name"><span class="error-txt"><?php echo $nameErr; ?></span>
+    </td>
+    </tr>
+    <tr>
+    <td><label>Email:</label>
+    <td><input  type="email" id="t2" name="email" placeholder="Enter your email address"><span class="error-txt"><?php echo $emailErr; ?></span></td>
+    </tr>
+    <tr>
+    <td><label>Username:</label></td>
+    <td><input type="text"  id="t1" name="username" placeholder="Enter an username "><span class="error-txt"><?php echo $usernameErr; ?></span></td>
+    </tr>
+    <tr>
+    <td><label>Enter Password:</label></td>
+    <td><input  type="password"  id="p1" name="password" placeholder="Enter a password" ><span class="error-txt"><?php echo $passwordErr; ?></span></td>
+    </tr>
+    <tr>
+    <td><label>Confirm Password:</label></td>
+    <td><input type="password"  id="p2" name="confirm_password" placeholder="Retype your password here"><span class="error-txt"><?php echo $confirm_passwordErr; ?></span></td>
+    </tr>
+    <tr>
+    <td> <label>Address(Optional):</label></td>
+    <td> <textarea cols="35" rows="3" name="address">Enter Your Details here..</textarea></td>
+    </tr>
+    <tr>
+    <td><label>CAPTCHA:</label></td>
+    <td> <div id="captcha" > </div> </td>
+    </tr>
+    <tr>
+    <td> <label>Enter CAPTCHA:</label> </td>
+    <td> <input type="text" name="captcha" id="cap" onfocus="res()" /></td>
+    </tr> 
+    <tr>
+    <td> <label></label> </td>
+    <td> <p name="msg" id="msg">CAPTCHA Entered is Incorrect!</p></td>
+    </td>
+    </tr>
+    </table>
+    <br>
+            <center><input type="reset" name="reset" value="Reset" class="b1" /><center>
+            <center><input type="submit" class="b2" onclick="validate()"  value="Sign Up"></center>
+            <br>
+            <center><h1>Already an User?</h1><a href="login.html"> Login here</a>  </center>
+            <br>
+    </div> 
+    </form>
+    </div>
+    
+</div>
+</div>
 </body>
 </html>
