@@ -111,6 +111,25 @@ font-weight: 2;
 color:#fff;#1aff8c;
 
 }
+#home
+   {
+          
+        top: 0;
+        left:0;
+        margin-left: 10px;
+     
+
+        }
+        #homeimg
+        {   margin-top:-15px;
+            height: 80px;
+            width: 80px;
+            float: left;
+            position:fixed;
+            z-index: 5;
+            
+
+        }
 #msg
 {
 	color:#ff8566;red;

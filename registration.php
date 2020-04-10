@@ -92,13 +92,9 @@ $query="Insert into users (name,email,username,password,address,reset_code,is_ac
 
 if ($conn->query($query))
 {
-echo "New Record Created SuccessFully!";
-//$msg="Your account has been created successfully. Click <a href='https://mail.google.com' target='external' >Here	</a>";
-//$message="You have been registered syccessfully.Click the link below to verify your account:<br><br><a href='account_verify.php?code=$reset_code'>Click to Verify</a>";
-
-//sending email to user
-//send_mail($email,$message);
+$msg="Your account has been created successfully.";
 $name=$username=$email=$address=$password=$confirm_password="";
+echo $msg;
 }
 else
 //echo "Error: ".$query."<br>".$conn->connect_error;
@@ -118,13 +114,13 @@ echo '</div>';
 <
 </form>
 //HTML Components
-    < <div id="top-nav-box">
-    <a href="home.html" ><button   id="button1">Home</button></a>
-     <a href="login.php" style="float: right;margin-right: 20px;"><button   id="button1">Login</button></a>
+    <div id="top-nav-box">
+    <div id="home">
+        <a href="home.html"><img src="home.png" title="Go to Home" id="homeimg" style="margin-left:10px;"></a>
+    </div>
+     <a href="login.php" style="float: right;margin-right: 20px;margin-top:-15px;"><button   id="button1">Login</button></a>
    </div>
     <div id="container">
-  <p><Marquee behavior="alternate"><span id="s1"style="color: white;font-weight: 800;font-size: 35px;margin-bottom: 10px;"> Welcome!! We are very delighted for having you here!
- </span></MArquee></p>
   <br>
 <br>
     <div class="signupbox">
@@ -156,7 +152,7 @@ echo '</div>';
     </tr>
     <tr>
     <td> <label>Address(Optional):</label></td>
-    <td> <textarea cols="35" rows="3" name="address">Enter Your Details here..</textarea></td>
+    <td> <textarea cols="35" rows="3" name="address" placeholder="Enter details here"></textarea></td>
     </tr>
     <tr>
     <td><label>CAPTCHA:</label></td>

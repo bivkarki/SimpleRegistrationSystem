@@ -57,7 +57,7 @@ echo $row["password"];
                         $_SESSION['username'] = $row['username'];
                         $_SESSION['email'] = $row['email'];
                         $_SESSION['password'] = $row['password'];
-                        $_SESSION['website'] = $row['website'];
+                        $_SESSION['address'] = $row['address'];
                         $_SESSION['image'] = $row['image'];
                         $_SESSION['created_at'] = $row['created_at'];
                         header ("Location: profile.php");
@@ -76,7 +76,7 @@ echo $row["password"];
     } // End of IF
 ?>
 
-<a  href="index.php">Home</a>
+<a  href="home.html">Home</a>
 <a class="nav-link" href="registration.php">Register</a>
 <a class="nav-link active" href="login.php">Login</a>
 <div class="alert-box">

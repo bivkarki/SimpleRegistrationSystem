@@ -1,7 +1,7 @@
 <?php 
  session_start();
- require_once 'require/config.php';
- require_once 'require/functions.php';
+ require_once 'config.php';
+ require_once 'functions.php';
    //Check if the user is not logged in
     if(!isset($_SESSION['id'])){ //if not logged in
         header("Location: login.php");
@@ -48,8 +48,8 @@
                     ?>
 </div>
 <div class="row">
-                    <div class="col-md-6">
-                        <?php 
+<div class="col-md-6">
+                        <?php
                             $sql = "SELECT image FROM users WHERE id = '$id'";
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) {
@@ -68,8 +68,8 @@
                                 echo "0 results";
                             }
                         ?>
-                    </div>
-                    <div class="col-md-6">
+ </div>
+             <div class="col-md-6">
                         <?php
                             $sql = "SELECT * FROM users WHERE id = '$id'";
                             $result = $conn->query($sql);
@@ -94,7 +94,7 @@
                             <p>Website: <strong><?php echo $website; ?></strong>&nbsp;</p>
                         </div>
                         <hr>
-                        <p>Created at: <strong><?php echo(date("d-m-Y",$created_at)); ?></strong></p>
+                        <p>Created at: <strong><?php echo($created_at); ?></strong></p>
                         <hr>
                         <div class="row">
                             <div class="col text-left">
