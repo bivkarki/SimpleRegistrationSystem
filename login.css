@@ -11,10 +11,10 @@ font-family: sans-serif;
 {
 	position: absolute;
 	margin-top:3.2%;
-	margin-left:31.2%;
+	margin-left:29%;
 	width:580px;
-	height:530px;
-	background:	rgba(230, 230, 230,0.5);
+	height:auto;
+	background:rgba(230, 230, 230,0.5);
 border:2.5px solid orange;
 border-radius: 25px;
 box-shadow: 8px 12px 20px #333;
@@ -38,12 +38,11 @@ legend
 	margin-left: auto;
 	display: block;
 
-
 }
 label
 {   font-size: 22px;
 	font-weight: bold;
-	color:navy;
+	color:NAVY;
 	
 	text-transform: uppercase;
 	margin-left: 15px;
@@ -52,7 +51,7 @@ h2
 {
 	padding: 0 0 20px;
 	text-align:center;
-	color:#3366cc; yellow;
+	color: yellow;
 	font-family: arial;
 	font-size:40px;
 }
@@ -61,18 +60,15 @@ input
 	margin-bottom: 20px;
 	margin-left: 45%;
  
- height: 35px;
 }
 .loginbox input[type="text"],.loginbox input[type="password"]
 {
- height:35px;
+ height:32px;
  width:75%;
  margin-left:80px;
- border:1.5px solid blue;
+ border:1.5px solid #192841;
  margin-bottom: 20px;
- color:#cc99ff; #339966
-; #00cc66
-;purple;
+ color:#fdfff5; 
  background: rgba(235, 235, 224,0.5);
  font-size: 22px;
 
@@ -122,11 +118,61 @@ color:#ED553b;#173F5f;
  width:75%;
 	border:1.5px solid blue;
 margin-left:80px;
-color:green;
+color:blue;green;
 font-size: 20px;
 font-family: Verdana;
 background-color:rgba(255,0,0,0);
 }
 td{
 	padding-left: 15px;
+}
+
+
+#b2:hover
+{  font-family: arial;
+        letter-spacing: 3px;
+font-size: 25px;
+background-color:#0b032d; #00cc44; #80ff00; #248024;
+color:yellow;
+border:2.5px solid orange;
+}
+#b2
+{
+        margin-top:40px;
+        height:30px;
+        width:auto;
+        color:White;
+        font-size:22px;
+        background-color:#2063f9;#f67e7d;  #248024;
+        box-shadow:10px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);
+        letter-spacing: 2px;
+        border-radius: 7px;
+        cursor: pointer;
+
+}
+
+a:hover
+{       color:yellow;
+        font-size: 30px;
+        word-spacing: 10px;
+        font-family: sans-serif;
+}
+#home
+   {
+
+       
+        margin-left: 30px;
+}
+ #homeimg
+ {   margin-top:10px;
+            height: 80px;
+            width: 80px;
+            float: left;
+
+
+  }
+#top-nav-box
+{
+        height:100px;
+        background: black;
 }

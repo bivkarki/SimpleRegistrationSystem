@@ -1,7 +1,7 @@
-
 body
 {
-margin: 0;
+padding:0;
+margin:0;
 background:black;
 }
 
@@ -18,11 +18,11 @@ background:black;
   background-position: fixed;
   
 }
-input,textarea
+input, textarea
 {
 	margin-bottom: 20px;
-	margin-left:80px;
- height: 35px;
+	margin-left:75px;
+ height: 30px;
 }
 .signupbox
 {
@@ -30,7 +30,7 @@ input,textarea
 	margin-left:auto;
 	margin-right: auto;
 	padding-right: 8px;
-	width:900px;
+	width:1000px;
 	height:auto;
 	background:	rgba(230, 230, 230,0.5);
 border:2.5px solid navy;
@@ -39,7 +39,7 @@ border-radius: 25px;
 .signupbox input[type="text"],.signupbox input[type="password"],.signupbox input[type="email"],textarea
 {
 
- width:70%;
+ width:58%;
  
  border:1.5px solid blue;
 color:#00b359;
@@ -53,24 +53,6 @@ textarea
 	height:auto;
 	resize: none;
 
-}
-.signupbox input[type="date"]
-{
-width:70%;
- 
- border:1.5px solid blue;
-font-family: Gamja Flower;
- color:#00b359;
- font-size: 22px;
- background: rgba(235, 235, 224,0.5);
-}
-.signupbox input[type="file"]
-{
- width:70%;
-font-family: Gamja Flower;
-color:#00b359;
- font-size: 22px;
- background: rgba(235, 235, 224,0.5);
 }
 #userimg
 {
@@ -86,7 +68,7 @@ overflow:hidden;
 background:#1aff8c;
 }
 #signup
-{
+{    
 	margin-bottom: 10px;
 }
 
@@ -96,7 +78,7 @@ background:#1aff8c;
 	color:dark blue;#5858FA;
 	margin-top: 10px;
 	text-transform: uppercase;
-	margin-left: 15px;
+	margin-left: 35px;
 	font-family: verdana;
 	width:auto;
 	vertical-align: text-bottom;
@@ -202,28 +184,6 @@ background-color: #00cc44; #80ff00; #248024;
 box-shadow:10px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);	
 }
 
-#captcha
-{background-color:#333;#80ffcc;;#75a3a3;
- #33cc33; color:#e0ebeb;#00b33c;#00cc7a;#1affa3; font-weight: bold; font-size: 35px; width:70%;
- font-family: monospace; 
- margin-bottom: 20px;
-margin-left:80px;
- height: 50px;
- border-radius: 8px;
-border:1.5px solid white;}
-
-caption
-{ 
-	color: #1a1aff;
-	font-family: Lobster Two,cursive;;
-	font-size:35px;
-	word-spacing: 15px;
-	letter-spacing: 1px;
-	border-radius: 5px;
-	margin-bottom: 15px;
-	font-weight: bold;
-}
-
 #button:hover
 {
 	transform: translateY(6px);
@@ -236,3 +196,5 @@ caption
 #button1
 {border:2px solid black;border-radius:9px;font-size: 30px;margin-top: 20px;margin-left: 20px;background-color:#435;cursor: pointer;color:white;}
 
+.error-txt
+{color:red;}

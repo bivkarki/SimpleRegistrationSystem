@@ -1,0 +1,89 @@
+body
+{
+margin:0;
+background:#B4C4C4;
+}
+#dp
+{
+
+width:150px;
+height:150px;
+border:3px dotted blue;
+}
+#profile_pic
+{
+width:auto;
+margin-top:20px;
+
+}
+#info
+{
+Z-index:3;
+background:#D6FF0A;#F3FFB9;
+margin-top:15px;
+width:700px;
+height:auto;
+border:2px solid black;
+}
+#b2:hover
+{  font-family: arial;
+        letter-spacing: 3px;
+font-size: 25px;
+background-color:#0b032d; #00cc44; #80ff00; #248024;
+color:yellow;
+border:2.5px solid orange;
+}
+#b2
+{
+        margin-top:40px;
+        height:30px;
+        width:auto;
+        color:White;
+        font-size:22px;
+        background-color:#2063f9;#f67e7d;  #248024;
+        box-shadow:10px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);
+        letter-spacing: 2px;
+        border-radius: 7px;
+        cursor: pointer;
+
+}
+
+a:hover
+{       color:yellow;
+        font-size: 30px;
+        word-spacing: 10px;
+        font-family: sans-serif;
+}
+#home
+   {
+
+
+        margin-left: 30px;
+}
+ #homeimg
+ {   margin-top:10px;
+            height: 80px;
+            width: 80px;
+            float: left;
+
+
+  }
+#top-nav-box
+{
+        height:100px;
+        background: black;
+}
+.icon
+{
+height:32px;
+width:35px;
+}
+#delete
+{
+font-size:30px;
+border-radius:8px;
+border:2px solid black;
+color:white;
+background:red;
+cursor:pointer;
+}
